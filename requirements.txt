@@ -1,4 +1,5 @@
 networkx
+bokeh
 natsort
 pickle
 pandas

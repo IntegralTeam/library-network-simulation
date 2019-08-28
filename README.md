@@ -2,7 +2,7 @@
 ![Greetings!](materials/image_bipartite.png?raw=true "")
 
 ## Description
-This repository is devoted to the simulation of a library networks.
+This repository is devoted to the simulation of library networks.
 The two types of nodes represent Books and Readers.
 ![Simulation example](materials/simulation.gif?raw=true "Simulation example")
 
@@ -20,14 +20,14 @@ params = {
 ```
 
 ### Simulation events
-Probabilities for an event happening at each event
+Probabilities for an event happening at each event.
 One of those will be triggered by a single agent per epoch
 
 #### Event1
 There is a single event1 each epoch for every active agent
 ```
 event1 = {
-    '_alpha_': 20,   # P for adding a new node connected to an existing node chosen randomly according to the in-degree distribution
+    'alpha': 20,   # P for adding a new node connected to an existing node chosen randomly according to the in-degree distribution
     'beta': 20,      # P for adding an edge between two exisiting nodes. One existing node is chosen randomly - according to the in-degree distribution and the other chosen randomly according to the out-degree distribution.
     'gamma': 20,     # P for adding a new node connected to an exsisting node chosen randomly  according to the out-degree distribution
     'delta_in': 20,  # Bias for choosing nodes from degree distribution.
@@ -35,7 +35,7 @@ event1 = {
 } 
 ```
 #### Event2
-This event hapens right after event1. Each type of it happens once per epoch except 'eta'
+This event hapens right after event1. Each type of it happens once per epoch except _eta_
 ```
 event2 = {
     'epsilon': 0, # P for no event

@@ -1,0 +1,1 @@
+from .words import NOUNS, ADJECTIVES, NAMES, SURNAMES
